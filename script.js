@@ -198,7 +198,7 @@ document.getElementById("checkoutButton").addEventListener("click",()=>{
   const total = items.reduce((sum,item)=>sum+item.food.price*item.quantity,0);
   const lines = items.map(item=>`• ${item.food.name} — ${item.quantity} порц. × ${formatPrice(item.food.price)} = ${formatPrice(item.food.price*item.quantity)}`);
   const message = `Здравствуйте! Меня зовут ${customerName}. Хочу оформить заказ:\n\n${lines.join("\n")}\n\nИтого: ${formatPrice(total)}`;
-  window.open(`https://wa.me/87788237005?text=${encodeURIComponent(message)}`,"_blank","noopener");
+  window.open(`https://wa.me/77788237005?text=${encodeURIComponent(message)}`,"_blank","noopener");
 });
 
 function closeModal(){
